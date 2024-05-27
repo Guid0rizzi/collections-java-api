@@ -1,4 +1,4 @@
-package OperacoesBasicas.Pesquisa;
+package OperacoesBasicas.List.Pesquisa;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,10 +39,24 @@ public class CatalogosLivros {
             for (Livro livro : livroList){
                 if (livro.getTitulo().equalsIgnoreCase(titulo)){
                     livroPorTitulo = livro;
+                    break;
                 }
             }
         }
         return livroPorTitulo;
     }
+    public static void main(String args[]){
+        CatalogosLivros catalogosLivros = new CatalogosLivros();
+        catalogosLivros.adicionarLivro("O rei casado", "Luis inacio", 1990);
+        catalogosLivros.adicionarLivro("O rei casado", "Luis inacio", 1990);
+        catalogosLivros.adicionarLivro("O rei casado", "Luis inacio", 2019);
+        catalogosLivros.adicionarLivro("O fela da mãe", "João jagunsso", 2020);
+        catalogosLivros.adicionarLivro("O fela da mãe", "Maria joana", 2021);
+        System.out.println(catalogosLivros.pesquisarPorAutor("João jagunsso"));
+        System.out.println(catalogosLivros.pesquisarPorAutor("Luis inacio"));
+        System.out.println(catalogosLivros.pesquisarPorIntervaloDeAno(1990, 2020));
+        System.out.println(catalogosLivros.pesquisarPorTitulo("O rei casado"));
+    }
 
 }
+
