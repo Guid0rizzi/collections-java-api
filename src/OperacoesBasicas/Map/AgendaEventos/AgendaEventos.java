@@ -38,7 +38,7 @@ public class AgendaEventos {
     }
     public static void main(String[] args) {
         AgendaEventos agendaEventos = new AgendaEventos();
-        agendaEventos.adicionarEvento(LocalDate.of(2023, Month.JULY, 11), "Evento 2", "Geladeira Tsunami);
+        agendaEventos.adicionarEvento(LocalDate.of(2023, Month.JULY, 11), "Evento 2", "Geladeira Tsunami");
         agendaEventos.adicionarEvento(LocalDate.of(2022, Month.JANUARY, 15), "Evento 1", "Tiringa");
         agendaEventos.adicionarEvento(LocalDate.of(2024, Month.MAY, 27), "Evento 3", "Charles Henriquepedia");
         agendaEventos.exibirAgenda();
